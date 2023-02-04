@@ -6,7 +6,6 @@ import {
 
 import { HomePage } from './pages/HomePage'
 import { NotFound } from './pages/NotFound'
-import { NavBar } from './components/NavBar'
 function App() {
 
   return (
