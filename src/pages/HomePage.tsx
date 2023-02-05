@@ -28,8 +28,14 @@ export function HomePage() {
 
     return (
         <div className='bg-[#8cc6e5] w-full text-white'>
+            <div className='flex p-2 h-[10vh] justify-end'>
+                <a className='bg-[#86bcda] hover:bg-[#51acdd] hover:cursor-pointer rounded-full m-2 p-1 flex items-center justify-center' href="https://www.instagram.com/ii.adhil_._/"><FaInstagram className='h-8 w-8' /></a>
+                <a className='bg-[#86bcda] hover:bg-[#51acdd] hover:cursor-pointer rounded-full m-2 p-1 flex items-center justify-center' href="https://www.instagram.com/ii.adhil_._/"><FaFacebook className='h-8 w-8' /></a>
+                <a className='bg-[#86bcda] hover:bg-[#51acdd] hover:cursor-pointer rounded-full m-2 p-1 flex items-center justify-center' href="https://www.instagram.com/ii.adhil_._/"><FaSnapchat className='h-8 w-8' /></a>
+
+            </div>
             {/* Home Page */}
-            <div className='flex flex-col h-screen items-center justify-center'>
+            <div className='flex flex-col h-[90vh] items-center justify-center'>
                 <img src={HomeImg} alt="Adhils image" className='h-screen w-screen transform' />
                 <div className='absolute'>
                     <p className='text-3xl font-semibold'>Hello <span className='wave'>👋</span></p>
@@ -38,6 +44,7 @@ export function HomePage() {
                     <div className='flex mt-5 overflow-hidden justify-center'>
                         <a href="#about" className='font-lg px-5 py-2 border bg-[#8cc6e5] hover:bg-[#9ccee9]'>See More ↓</a>
                     </div>
+
                 </div>
             </div>
             {/* About Page */}
@@ -53,8 +60,16 @@ export function HomePage() {
             </div>
             {/* Contact Page */}
             <div id="contact" className='bg-[#cbcc78] h-screen px-10 sm:px-20 lg:px-32'>
-                <div className='pt-14 lg:pt-28'></div>
+                <div className='pt-32 lg:pt-28'></div>
                 <div className='flex items-center justify-center gap-36'>
+                    <iframe
+                        className='hidden lg:inline-block border-5 rounded border-[#c0c259]'
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.0431758366376!2d75.92896371448168!3d11.476809391848558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba66f26ea3e2b2d%3A0x5e4179781d18e3d1!2sKattippara%20Rd%2C%20Kerala!5e0!3m2!1sen!2sin!4v1675516628124!5m2!1sen!2sin"
+                        width="600"
+                        height="450"
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"></iframe>
                     <div>
                         <h1 className='font-semibold underline text-4xl mb-16'>Get in Touch</h1>
                         {/* Phone Number */}
@@ -92,14 +107,6 @@ export function HomePage() {
 
                         </div>
                     </div>
-                    <iframe
-                        className='border-5 rounded border-[#c0c259]'
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.0431758366376!2d75.92896371448168!3d11.476809391848558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba66f26ea3e2b2d%3A0x5e4179781d18e3d1!2sKattippara%20Rd%2C%20Kerala!5e0!3m2!1sen!2sin!4v1675516628124!5m2!1sen!2sin"
-                        width="600"
-                        height="450"
-                        allowFullScreen
-                        loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
 
